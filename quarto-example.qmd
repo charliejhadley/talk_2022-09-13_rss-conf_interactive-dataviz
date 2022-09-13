@@ -1,0 +1,12 @@
+---
+title: "RSS"
+format: html
+---
+
+This is cool `r Sys.time()` and **that's** some Markdown
+
+```{r}
+#| echo: false
+2 + 2
+```
+

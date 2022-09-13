@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.0.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Country report</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
+
+
+<script src="country-report_files/libs/clipboard/clipboard.min.js"></script>
+<script src="country-report_files/libs/quarto-html/quarto.js"></script>
+<script src="country-report_files/libs/quarto-html/popper.min.js"></script>
+<script src="country-report_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="country-report_files/libs/quarto-html/anchor.min.js"></script>
+<link href="country-report_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="country-report_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="country-report_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="country-report_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="country-report_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="country-report_files/libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
+<script src="country-report_files/libs/jquery-1.12.4/jquery.min.js"></script>
+<link href="country-report_files/libs/leaflet-1.3.1/leaflet.css" rel="stylesheet">
+<script src="country-report_files/libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="country-report_files/libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet">
+<script src="country-report_files/libs/proj4-2.6.2/proj4.min.js"></script>
+<script src="country-report_files/libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="country-report_files/libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
+<script src="country-report_files/libs/leaflet-binding-2.1.1/leaflet.js"></script>
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Country report</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    
+  </div>
+  
+
+</header>
+
+<div class="cell">
+
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="country-report_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div id="htmlwidget-1ba665103e560e11fc6b" style="width:100%;height:464px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1ba665103e560e11fc6b">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addPolygons","args":[[[[{"lng":[-5.6619486149219,-6.19788489422098,-6.953730231138,-7.57216793459108,-7.36603064617879,-7.57216793459108,-6.73384701173615,-5.6619486149219],"lat":[54.5546031764839,53.8675650091633,54.0737022975756,54.059956366586,54.5958409694527,55.1316222194549,55.1728600124238,54.5546031764839]}],[{"lng":[-3.00500484863528,-4.07382849772802,-3.05500179687766,-1.95928056477692,-2.2199881656893,-3.11900305827112,-2.08500932454302,-2.00567567967386,-1.11499101399221,-0.4304849918542,0.184981316742039,0.469976840831777,1.68153079591474,1.55998782716438,1.05056155763091,1.4498653499503,0.550333693045502,-0.78751746255864,-2.48999752441438,-2.95627397298404,-3.61744808594233,-4.54250790039924,-5.24502315919113,-5.7765669417453,-4.30998979330184,-3.41485063314212,-3.42271946710832,-4.98436723471087,-5.26729570150889,-4.22234656413485,-4.77001339356411,-4.57999915202691,-3.09383067378866,-3.09207963704711,-2.94500851074434,-3.61470082543303,-3.63000545898933,-4.844169073903,-5.08252661784923,-4.71911210775664,-5.04798092286211,-5.58639767091114,-5.64499874513018,-6.14998084148635,-5.78682471355529,-5.00999874512758,-4.21149451335356,-3.00500484863528],"lat":[58.6350001084663,57.5530248073553,57.6900190293609,57.6847997096995,56.8700174017535,55.9737930365155,55.9099984808513,55.8049028503502,54.6249864772654,54.4643761257022,53.325014146531,52.929999498092,52.739520168664,52.099998480836,51.8067605657957,51.289427802122,50.7657388372759,50.7749889186562,50.5000186224312,50.696879991247,50.2283556178727,50.3418370631857,49.9599999049811,50.1596776393568,51.2100011256892,51.4260086126692,51.4268481674061,51.593466091511,51.9914004583746,52.3013556992614,52.8400049912556,53.4950037705552,53.4045474006697,53.4044408229636,53.9849997015467,54.6009367732926,54.615012925833,54.7909711777868,55.0616006536994,55.5084726019435,55.7839855007075,55.3111461452368,56.2750149603448,56.7850096706335,57.8188483750646,58.6300133327501,58.5508450384792,58.6350001084663]}]]],null,null,{"interactive":true,"className":"","stroke":true,"color":"#03F","weight":5,"opacity":0.5,"fill":true,"fillColor":"#03F","fillOpacity":0.2,"smoothFactor":1,"noClip":false},null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[49.9599999049811,58.6350001084663],"lng":[-7.57216793459108,1.68153079591474]}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
