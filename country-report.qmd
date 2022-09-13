@@ -1,0 +1,42 @@
+---
+title: "Country report"
+format: html
+params:
+  country: "United Kingdom"
+echo: false
+message: false
+warning: false
+---
+
+```{r}
+library(tidyverse)
+library(rnaturalearthdata)
+library(leaflet)
+library(gapminder)
+library(sf)
+```
+
+
+```{r}
+gapminder %>% 
+  filter(country == params$country) %>% 
+  ggplot(aes(x = year,
+             y = pop)) +
+  geom_line() +
+  scale_y_continuous(labels = scales::label_number(scale = 1E-6, suffix = " Million")) +
+  labs(title = str_glue("Life expectancy in {params$country}"),
+       subtitle = "Source: Gapminder")
+```
+
+```{r}
+countries110 %>% 
+  st_as_sf() %>% 
+  filter(name == params$country) %>% 
+  leaflet() %>% 
+  addTiles() %>% 
+  addPolygons()
+```
+
+
+
+
